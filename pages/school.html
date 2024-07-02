@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>School</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <svg class="logo-abbr" width="55" height="55" viewBox="0 0 55 55" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M27.5 0C12.3122 0 0 12.3122 0 27.5C0 42.6878 12.3122 55 27.5 55C42.6878 55 55 42.6878 55 27.5C55 12.3122 42.6878 0 27.5 0ZM28.0092 46H19L19.0001 34.9784L19 27.5803V24.4779C19 14.3752 24.0922 10 35.3733 10V17.5571C29.8894 17.5571 28.0092 19.4663 28.0092 24.4779V27.5803H36V34.9784H28.0092V46Z"
+                        fill="url(#paint0_linear)" />
+                    <defs>
+                    </defs>
+                </svg>
+                <div class="brand-title">
+                    <h4 class="mb-0">Read2Enrich</h4>
+                </div>
+            </a>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell dz-theme-mode" href="javascript:void(0);">
+                                    <i id="icon-light" class="fas fa-sun"></i>
+                                    <i id="icon-dark" class="fas fa-moon"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.3333 19.8333H23.1187C23.2568 19.4597 23.3295 19.065 23.3333 18.6666V12.8333C23.3294 10.7663 22.6402 8.75902 21.3735 7.12565C20.1068 5.49228 18.3343 4.32508 16.3333 3.80679V3.49996C16.3333 2.88112 16.0875 2.28763 15.6499 1.85004C15.2123 1.41246 14.6188 1.16663 14 1.16663C13.3812 1.16663 12.7877 1.41246 12.3501 1.85004C11.9125 2.28763 11.6667 2.88112 11.6667 3.49996V3.80679C9.66574 4.32508 7.89317 5.49228 6.6265 7.12565C5.35983 8.75902 4.67058 10.7663 4.66667 12.8333V18.6666C4.67053 19.065 4.74316 19.4597 4.88133 19.8333H4.66667C4.35725 19.8333 4.0605 19.9562 3.84171 20.175C3.62292 20.3938 3.5 20.6905 3.5 21C3.5 21.3094 3.62292 21.6061 3.84171 21.8249C4.0605 22.0437 4.35725 22.1666 4.66667 22.1666H23.3333C23.6428 22.1666 23.9395 22.0437 24.1583 21.8249C24.3771 21.6061 24.5 21.3094 24.5 21C24.5 20.6905 24.3771 20.3938 24.1583 20.175C23.9395 19.9562 23.6428 19.8333 23.3333 19.8333Z"
+                                            fill="#717579" />
+                                        <path
+                                            d="M9.9819 24.5C10.3863 25.2088 10.971 25.7981 11.6766 26.2079C12.3823 26.6178 13.1838 26.8337 13.9999 26.8337C14.816 26.8337 15.6175 26.6178 16.3232 26.2079C17.0288 25.7981 17.6135 25.2088 18.0179 24.5H9.9819Z"
+                                            fill="#717579" />
+                                    </svg>
+                                    <span class="badge light text-white bg-warning rounded-circle">12</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <div id="DZ_W_Notification1" class="widget-media dlab-scroll p-3"
+                                        style="height:380px;">
+                                        <ul class="timeline">
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    <div class="media me-2">
+                                                        <img alt="image" width="50" src="../assets/images/avatar/1.jpg">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Dr sultads Send you Photo</h6>
+                                                        <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    <div class="media me-2 media-info">
+                                                        KG
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Resport created successfully</h6>
+                                                        <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    <div class="media me-2 media-success">
+                                                        <i class="fa fa-home"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Reminder : Treatment Time!</h6>
+                                                        <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    <div class="media me-2">
+                                                        <img alt="image" width="50" src="../assets/images/avatar/1.jpg">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Dr sultads Send you Photo</h6>
+                                                        <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    <div class="media me-2 media-danger">
+                                                        KG
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Resport created successfully</h6>
+                                                        <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    <div class="media me-2 media-primary">
+                                                        <i class="fa fa-home"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">Reminder : Treatment Time!</h6>
+                                                        <small class="d-block">29 July 2020 - 02:26 PM</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="all-notification" href="javascript:void(0);">See all notifications <i
+                                            class="ti-arrow-end"></i></a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown  header-profile">
+                                <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                                    <img src="../assets/images/user.jpg" width="56" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+                                            width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        <span class="ms-2">Profile </span>
+                                    </a>
+                                    <a href="login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
+                                            width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                            <polyline points="16 17 21 12 16 7"></polyline>
+                                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                                        </svg>
+                                        <span class="ms-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li><a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li><a href="student.html">
+                            <i class="fa fas fa-graduation-cap"></i>
+                            <span class="nav-text">Students</span>
+                        </a>
+                    </li>
+                    <li class="mm-active"><a href="school.html" class="mm-active">
+                            <i class="fa-solid fa-school"></i>
+                            <span class="nav-text">Schools</span>
+                        </a>
+                    </li>
+                    <li><a href="ebook.html">
+                            <i class="fa-solid fas fa-book"></i>
+                            <span class="nav-text">Ebook</span>
+                        </a>
+                    </li>
+                    <li><a href="mentor.html">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <span class="nav-text">Mentor</span>
+                        </a>
+                    </li>
+                    <li><a href="notify.html">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="nav-text">Notifications</span>
+                        </a>
+                    </li>
+                    <li><a href="faq.html">
+                            <i class="fa-solid fa-question-circle"></i>
+                            <span class="nav-text">FAQs</span>
+                        </a>
+                    </li>
+                    <li><a href="contact.html">
+                            <i class="fa-solid fa-address-book"></i>
+                            <span class="nav-text">Contact Us</span>
+                        </a>
+                    </li>
+                    <li><a href="about.html">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="nav-text">About Us</span>
+                        </a>
+                    </li>
+                    <li><a href="terms.html">
+                            <i class="fas fa-comment-dots"></i>
+                            <span class="nav-text">Terms & Conditions</span>
+                        </a>
+                    </li>
+                    <li><a href="privacy.html">
+                            <i class="fas fa-headphones-alt"></i>
+                            <span class="nav-text">Privacy Policy</span>
+                        </a>
+                    </li>
+                    <li><a href="profile.html">
+                            <i class="fas fa-circle-user"></i>
+                            <span class="nav-text">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-body default-height">
+            <div class="container-fluid">
+                <div class="row page-titles">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">School</a></li>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_school">Add
+                            School</a>
+                    </ol>
+                </div>
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="navbar-nav header-right mb-2">
+                                <li class="nav-item d-flex align-items-center justify-content-end">
+                                    <div class="input-group search-area">
+                                        <input type="text" class="form-control" placeholder="Search here...">
+                                        <span class="input-group-text"><a href="#"><i
+                                                    class="fa fa-search"></i></a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="table-responsive">
+                                <table class="table table-responsive-md text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr no.</th>
+                                            <th>School Name</th>
+                                            <!-- <th>Email</th>
+                                            <th>Age Group</th>
+                                            <th>Date of birth</th> -->
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>01</td>
+                                            <td>Republic School</td>
+                                            <td>
+                                                <div>
+                                                    <a href="schooldetails.html"
+                                                        class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>02</td>
+                                            <td>National School</td>
+                                            <td>
+                                                <div>
+                                                    <a href="schooldetails.html"
+                                                        class="btn btn-primary shadow btn-xs sharp me-1"><i
+                                                            class="fa fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                            class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="copyright">
+                <p>© Copyright by <a href="index.html" target="_blank">Read2Enrich</a> <span id="year"></span></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade " id="add_school" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add School</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="comment-form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="mb-3">
+                                    <label class="text-black font-w600 form-label required">School Name</label>
+                                    <input type="text" class="form-control" name="schoolname" placeholder="School name">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="mb-3 mb-0">
+                                    <input type="submit" value="Add School" class="submit btn btn-primary"
+                                        name="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/global.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+    <script src="../assets/js/chart.bundle.min.js"></script>
+    <script src="../assets/js/custom.min.js"></script>
+    <script src="../assets/js/dlabnav-init.js"></script>
+    <script src="../assets/js/demo.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>
